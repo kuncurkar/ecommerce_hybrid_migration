@@ -13,4 +13,5 @@ with mysql.cursor() as cur:
             {"_id": row[0], "name": row[1], "email": row[2]},
             upsert=True
         )
+        <br>
 print("✅ Migrated users from MySQL to MongoDB")
