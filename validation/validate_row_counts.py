@@ -13,3 +13,4 @@ for table in ['users', 'orders']:
     mysql_count = count_mysql_rows(table)
     mongo_count = count_mongo_docs(table)
     print(f"{table.capitalize()} - MySQL: {mysql_count}, MongoDB: {mongo_count}")
+    
