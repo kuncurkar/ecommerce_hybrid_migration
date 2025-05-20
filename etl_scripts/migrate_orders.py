@@ -18,3 +18,4 @@ with mysql.cursor() as cur:
         }
         mdb.orders.replace_one({"_id": doc["_id"]}, doc, upsert=True)
 print("✅ Migrated orders from MySQL to MongoDB")
+
